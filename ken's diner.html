@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style>
+    .menu{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  flex-grow:8px;
+  border:6px solid #528AAE;
+  border-radius:45%;
+  padding:5px;
+  text-align:justify;
+  justify-content:space-evenly;
+  color:white;
+}
+
+@media(max-width:768px) {
+  .menu{
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+}
+.option{
+  background-color:#528AAE;
+  border-radius:33%;
+  justify-content:center;
+  width:350px;
+  height:350px;
+  margin:20px;
+  text-align:center;
+}
+body {background-color:#ADD8E6;background-size:100% 100%;}
+h1 {font-size:40px}
+h2 {font-size:25px}
+</style>
+</head>
+<body>
+<h1>Ken's Diner</h1>
+<hr style="width=70%"  size="5"  color="#6082B6">
+<h2><b> Meal </b></h2>
+<hr style="width=70%"  size="2"  color="#6082B6">
+<div class="menu">
+    <div class="option">
+        <img src="https://assets.bonappetit.com/photos/5b919cb83d923e31d08fed17/1:1/w_2560%2Cc_limit/basically-burger-1.jpg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="menu name">Burger</p>
+        <p class="price">Rp. 25.,00</p>
+    </div>
+    <div class="option">
+        <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2Fc3a8c1079c6970caf7188768531f20699d22f0d7" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="menu name">Grilled Cheese Sandwich</p>
+        <p class="price">Rp. 15.000,00</p>
+    </div>
+    <div class="option">
+        <img src="https://resepkoki.id/wp-content/uploads/2017/03/Resep-Spagetti-aglio-olio.jpg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="menu name">Aglio Olio</p>
+        <p class="price">Rp. 20.000,00</p>
+    </div>
+    <div class="option">
+        <img src="https://img.taste.com.au/86bOXAkG/taste/2016/11/carbonara-sauce-28894-1.jpeg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="menu name">Carbonara</p>
+        <p class="price">Rp. 20.000,00</p>
+    </div>
+        <div class="option">
+        <img src="https://rasamalaysia.com/wp-content/uploads/2019/06/chinese-fried-rice-thumb.jpg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="menu name">Chinese Fried Rice</p>
+        <p class="price">Rp. 25.000,00</p>
+    </div>
+        <div class="option">
+        <img src="https://www.simplyrecipes.com/thmb/PBW3FqeGmzDJkZT7PXTRGa4H3oU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2017__10__2017-10-28-Tiramisu-21-7de4673191d542039f47927fde4fee82.jpg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="menu name">tiramisu</p>
+        <p class="price">Rp. 15.000,00</p>
+    </div>
+</div>
+
+<h2><b> Drinks </b></h2>
+<hr style="width=70%"  size="2"  color="#6082B6">
+<div class="menu">
+    <div class="option">
+        <img src="https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/03/24/839874863.jpeg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="drink name">Aqua</p>
+        <p class="price">Rp. 5.000,00</p>
+    </div>
+    <div class="option">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTozTNtR5U_aeu8w1Dy6Q5OlWxzp1BUd4eHIg&usqp=CAU" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="drink name">coca cola/sprite/fanta</p>
+        <p class="price">Rp. 8.000,00</p>
+    </div>
+    <div class="option">
+        <img src="https://www.ecooe.com/ecooe-life/wp-content/uploads/2017/06/how-to-make-iced-coffee-1.jpg" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="drink name">Hot/Ice Coffee</p>
+        <p class="price">Rp. 10.000,00</p>
+    </div>
+        <div class="option">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDw8PDxAPDw8NDQ8ODQ8PDw8QDw8PFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4wFx8zODMtNygtLisBCgoKDg0OFxAPFy0eHyIrLy0rLSstKy0tLSsrKy0rLTUtKys3LystLTctNS0tKystKystNysrLS0rKy0rLS0rLf/AABEIAKIBNwMBIgACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIEBQYHA//EAEwQAAIBAgMEBgQJCAUNAAAAAAABAgMRBBIhBTFBUQYTImFxkQcygcEUI0JSYqGiscIzQ4KDkrLR8BVTcrPSFjVEY3OElJWjw9Th4v/EABoBAQEBAAMBAAAAAAAAAAAAAAABBQIEBgP/xAAwEQEAAgIBAgMGBgEFAAAAAAAAAQIDEQUEEiFBURMxYYGRwTJxobHh8NEUFSIjUv/aAAwDAQACEQMRAD8A9pAudf2picX10uqhUyWUIJZ7XV31jcab0ea1k21kWmrtxmdRtYjbsAODksZHDp06k61ZOr69GFJytRlkTjPnUjHX6b4K6z6zGuTioKMGqSjNypqaaadVt5WtVOy7H5p/ORRzIODqV8c+ry02uxRVfSje95ddKN5eslkyrdrK99LbWxJ4pqfwuMYvRwUXFpayvqu5R0d+eZ3tEOTAAAFBBUxcgKLmKmYlAtypmKKBbi4sABA2ALctzG4zAVksEy3AljImYXAoAAAACAoAxIZWIBAXQJkEuCtkAAADAFBRAUAQtwWwEuW5LCwFuAAKAUCApQIigAACgQWKYyYEBAQUEAFsDi9pbbp4WbWITp0+qlUp1V2lUcdZU1FaqdtUtbq9tzNzAYl1qcajp1aOfVQrKMaiXBtJu3hvJExM6GwZXMTGpUUYuUmoxim5N7kkXeh9AdZxfSPVqCa104eb9yPjQ6Qzv2k7d0n9zOnPXY4nUeL7Rhtp2wGls7aEayunr/P1m6dql63jdXymJidSEAsc0QFBBAAAAAGIAKAACKCFAoIUALFKFSwsUoEsLAoEsAzEDIGJQDkYgMgAouASOK2v0lwWDeXEV4Rmld04qVSola6vGCbV+80umvSN4Ggo0YyqYvEuUMLTjBz1Vs02lwjdeLa77eebF6EY7GVI1sVGUI1pxq16ldrrJQzdq0PWzNJrVK10fDLltWYrSNz+w1ts1qOKr1p5pzpTrSq0nnm1kbzwtd3W/dw1Wm47Z0H2vQwOBtVnGmqlerKlmnOc6kVlg2o/J1TWmjtfmcf6R8BFY6Ms6pQq0oTqdhtZl2Va3NR8Fl7z57XVHERw0MMoRVGHVaW7UHa6nfjpe7b48zPnLXBktM2jf+XYp02W9dxHg9A2ZtuGKg50GpqMskllalF2vqr7u9X+pml0qxj6uFO6+Mm3K0ZLSKuuO7M15HneHrS2diKco1eoc6kIyhJSyVoSa0srqT10auzte0trwqQg5KDnCpe8c7Uk0096777+CPpn6v8A65rbwmY+T6YOmtadxHuce3qlzaS5tm7Glw3N6s67itpUrtNtS4Rejfgkcrs+b6qLd3pxu2ZtbRrxdrJjtVy2ArujUi1om7tcLrW53dM6Xs3BTrTildRaTn9GL33796R3U2OhrMVnbPzzG4ACXO8+KhgAQFIBAUEGACBQAAAAAUpicZt6c0sPGE3TdXExp5tWtYylZpNXTy29oHLFOCrbLxL9WrSW+9opfvxmar2RjFunCX+8Rg35YZkmfgadnF/5udZey8Z9D/jpf+KYvZWN5x/5jVX3YY49/wAHLt+Ls+Zc15oZlzXmjrENk4u/akkuLW0K8n5dQjZjsWrxr1V4YipL8KHfPoaj1c65LmvMHB/0DPjXrP8AXz/wlhsBr8/UfdJua9xdz6I5shwOLwE4Sovr1BPEU0oUqbpupzjKWd6WTe7gc+VEBbACAoAJi4AHnXpSnkrYaVk89Gcdd3Zd/wAR0CjXi5aOVGXOMml58D0b0tQXV4Sfzas4ftZX+FnkuJr9rLHXXVmD1eLee398npuOr34K6/vi56VSU80ZOV4LM5KUrcr356nwo0a1V2zVMn0pSd/BHyw2LdONpJ5GuHE2KO3FFWs+1K2trJHRmMkb7YaU0mINo7GhQhGpmbq37Kzbv5957Rs/o/Rp06ce28sI3Tlxtr3njuDpddXpJNzjOpCOu5XaR70zT4ynfFpv4z4MHlbTXsjfqwo0YwWWEVFb7Li+b5mYBtRER7mKAAAAADIVkAXAAHzRQUIgLYWCoC2FgCOuekDEzoYF4mnFTnhMRhsQot2TSqRi9eGkmdksae2sAsThsRh3+foVKafJuLSfsdmSfcQ882X6TK9eap/Blnk+yoVKaXnOy+s52fSjEx9fC4mPh8Dl/wBw8dpuVGtreMoTs+DTTPXKWIWIw9KstXKCU7fOW885yPJdR09q9utT+7Uw9NitETMLLpbV/q8Qv0cNf98+UumE/mYn9jD/AOM0a8DTnE6deXzz6NKnG9PPlP1crLpjU4U8U/Zhl+Mn+WNfhQxL8XhF+M4jKfWnE5Ty2ePRynjOnjyn6uVp9LMVLdQrrxq4RfxNbbXTHHYaj1zw3YUlG8sVSvd7tFRfI+uDpXaOI9KdZUsHRpcalRy9kVb8Rxw8x1F89Mfh4y6WTpMFbaiPX9mr0X6c47aW0MNQdKDjCcq8lHLKcKcVllJNqEflcU+HM9aeIkleSkrc6Un9cL2PKPQRsu9TGY1r1YxwtJ87tSnb9mPmewnrMf4dyx8mu7UPjQxKnazTzK8XFqUZL6MlvPqa1WglJuOnWO7t/WRV1LxsmnzsjYg7pPmkzm4LcAAAUAdQ9JuFVTB07/JxUL+DhNfwPLcTsRw1gew9OY3wNR/NnSl9tL3nnsq6t7DzvK5L488dvnD0/D2n2MxHq4GMYxtCaalbhqjW2hKmopJXZ99pSU60Ix4auxydLDxUVmjf2HT7+3Vp8/JtdsV1MtbofK+MwdNfKxNFy8FJP3HvR5V0Zw8Ph+DtCMe3KWis9ISfuPVTb4q0Xx2tEeby3NW3mr+X3APIGoxwAAAABAUAQhdQQYCxLlKhYpLluAKAAKassYszjCFSbW/LFqK/SdkZxnVfyIQ/tTcn5Je8Dx70p7EeHxbrwXxeI+MdlopbpfX+8j69BNsXjPDy5Zo+K0fu8j0XpZsSeMw8ofFyqQTlSjlazO2sG29FJaeNnwPEqMZ4SqpxzZJNpNq0lZ2lCS4TW5oweU6aLxNJ8/GPz/v6NfobxaNT8/tL0bEo0aiPjgdpqrBO6vaz8TOdS55iKWpOpbuOsxCJGxRgfCBu4ZC86hck6hy+yqGt+R536R8csVjepi7xoU3DTdmScn9ensOy7Y6VQwtGaptSqyvGL3qPC/nc6z0D2WsRi4168opZ3KPWSgnVqesopSks25tq+5Hf4bor2z+2vHwhidVaabmffL1foJsX4Ds+hRatNx62t/tJ6tPwVl7DnzRp4qXyp0vsr8bMqleTtllHf2nCEqjt3W0T8T2sRqNMaZ2+9TVx+jeT7lZpfe/IzhuXga+EqRkt046u6qRkpyfN33+y/uNoAgBcABcoHBdNlfZ+J/s0/wC8geNulVn6rfceydNv834jwp/3kDy6nUjbsb1v5mByt+3LGo8vvL1XAzrDb8/tDiaOBrUqinKF0+O9M3p7YcW1KmtO9nYcJUvS+MS425s6/td09XYya5fa21ev0bGO/tLTW0e5znQzaPX7Rw3YUVFVd2v5uZ6weMejvTaGH73UX2JHtFj0fF1iuKYj1+0PLc7WK9RER/5+8oADSYzK5MxABcxTEpRblMQBQQAfMAAAC2AGFennhKGaUHKLipxtmi2t670ZgDrtTaeOwrtiKEMTTX+kULweXnKGqT8kfeh0poSV3GvT8aTqL/p5jnEaOJ2PQqNtwyye+UHlfjbdf2BGNLatOfqVKb8XKD8pI6T0z6POVSWJo0+shXaeLoQaleXCtC26XPn5nbI7Hq0/yVbMuEasU2v0v/Rr4jE1qLWenfi3FRk333voj458VctJrZ9cOS2O8Wh5Ziti1qDzU1UlDfezU49zRhS2pUh66ze1JnqdbbjasozT/twi17FURw2M2xJ76k1+th75syp42J/Fffy/lq15Oa+6mvn/AA6YtvWXqec1/A4/aPSKVrOdlyTS+7edye1VxqSfjVh7mbGF2tT7n+t/+yU4rHE72X5S8x+H9f4eZ7JwlbaFeMIRk437UrNxjHi33HueyMHTw1GFKjJKEY67oXfGUu84SW1YRXZikna8s0Hb7TaN6GHxOJh8XFQg9M8pJX9lsxq4cMY48GXlzWyTuWziekmDpflcbQVt8YXqy+yn9xxlX0hYWOmFoY3GTbsslJ04t+NRx+pM3qHQmk3nxE+tnpe0Ul4a3+5HPYDZdCh+Spxg/nWvLzep93xcDsp7UxlalWxUIbPwtKfWLCwk6mIxErNRVWbSUYK98qSbtyO1FsQigKigYFMrCwHCdMKebBVorfLq1Fc5Z42XieK4mUoS3OMovlZpnvG2dl08Xh6uGq3UK0MrcXaUXvUl3ppM87qdCsdCahVlHGUVZRqZV1iit13dT9l2jodX0c5rRas+Wmtx3Ix0tZrMbiZdLntura1jRr7QzO8j2HDdDsIoq907axklo/arnHbZ6FUJW6mhOtJ716kPbLS3mdGnH5ItrsiPjtqf75iiP+MT9HVPR7iFLaGHtujN3fBXTS+tntp0jop0F+DVo4mu4KVK7oYej+ThJprPN/LnZ297O7WNXpsHsazHrLC67q/9Tk7/AIaUEKdh0gAWAAWLYoC4AAAAfItiXKBQAELCwKFSxjKaW9mViOmgjWrYh2eVPubOv7W2dVrQtm7UavWxk3OM4yvfsyjutw0a7tzXaOqRhOgnuKOlYWWLodl0alWK3N16k3b2tr7K8Ddp4ypL1qU49zhQf300dl+BofBQOtSjm30/OlR9yPn/AEdCXrU864JpW8stjtPwUvwUmoHX6Gz0mrU4RtuskrLusclhYSjK6dla1le3tN9Yax9VSRRhGq+J9FJMdWhlRFXKWwBAQFwUCkuAKfOdaK4+RMQ3keVNvkt7V9bey5oR7WqsBtqsnffv8RTxKu1Z6M4Z7KlmbjUkk9/YpuX7Vrv23NrCYLq23mk20lujGK8IxSXtOMW3OtOU11G9uWhNPcZWNCjUvNRi7tNOVvkrvN85OJYljIASxLGRAJYtigCAjFwKCEAwAAFuLkKAuW5LADJAligUAACkKAAAAhSALi4AAEYuQW4uQAW4AAHzqUIyd2teabi/NH0BRx9XZSk2+uxMb8I1bLya0MsPsuEN8qtR/wCsqN/dY3gTRuUp04xVopRW+ySSMrkTKUUEAFJcACkAYGLBbEIAFgBgCoFEKAQAC2AlzJBIpQAAApCgAABAUgAlytggiKGYgUCxbAAUWKIQysSwEBcpbEBAWCRQAAAMCwGOYtymLZBbkIUAAANLO+b8zJTfN+YBQzvm/MuZ835gAXM+b8yOT5vzKAMc75vzKpvm/MAC5nzfmMz5vzAA+ik+bMk2AEZXFygKqMiAIpAAoRAAUoARGS4AVkikARCgBVBAEGCACgACMjIAqkAIKgAUf//Z" style="width:200px;height:200px;border-radius:20px;border-radius:35%;">
+        <p class="drink name">Hot/Ice tea</p>
+        <p class="price">Rp. 10.000,00</p>
+    </div>
+</div>
+</body>
+</html>
